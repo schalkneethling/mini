@@ -1,0 +1,30 @@
+{
+  "name": "@schalkneethling/mini",
+  "version": "0.0.1",
+  "description": "A minimal set of useful SASS utilities",
+  "main": "index.js",
+  "repository": "https://github.com/schalkneethling/mini.git",
+  "author": "Schalk Neethling <sneethling@mozilla.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "sass ./sass/mini.scss ./build/mini.css",
+    "lint:sass": "stylelint sass/**/*.scss",
+    "test": "yarn build && yarn lint:sass"
+  },
+  "calavera": {
+    "sass": true,
+    "prettier": true
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1",
+    "sass": "^1.26.10",
+    "stylelint": "^13.7.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0"
+  }
+}

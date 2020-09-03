@@ -1,0 +1,28 @@
+/* 
+ * Hide an element visually, but not from screen readers
+ * Use this mixin sparingly to avoid unnecessary code bloat
+ * Instead, use the class `visually-hidden` directly on the
+ * relevant element or component.
+ */
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  /* !important required to ensure element is hidden when mixin is applied */
+  position: absolute !important; /* stylelint-disable-line declaration-no-important */
+  width: 1px;
+}
+
+@mixin reset-visually-hidden {
+  border: inherit;
+  clip: inherit;
+  height: inherit;
+  margin: inherit;
+  overflow: inherit;
+  padding: inherit;
+  position: inherit !important; /* stylelint-disable-line declaration-no-important */
+  width: inherit;
+}
