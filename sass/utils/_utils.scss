@@ -4,23 +4,3 @@
 .visually-hidden {
   @include visually-hidden();
 }
-
-/* Hides without affecting the document layout */
-.hide {
-  visibility: hidden;
-}
-
-/* Hide from everyone */
-.hidden {
-  display: none;
-}
-
-/* Show for everyone */
-.show {
-  display: block;
-}
-
-/* Like `.show` but for flex containers */
-.show-flex {
-  display: flex;
-}
